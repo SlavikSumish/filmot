@@ -1,0 +1,139 @@
+.page-header__container {
+  height: 230px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+    url(/images/Rectangle320.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url(/images/Rectangle768.jpg);
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url(/images/Rectangle.jpg);
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: $color-header-text;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-extra;
+  line-height: 1.17;
+}
+
+.logo_label {
+  margin-left: 10px;
+  display: block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.menu__list {
+  display: flex;
+
+  font-weight: $font-weight-normal;
+  font-size: $font-size-base;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.menu__list-item {
+  position: relative;
+}
+
+.menu__list-link {
+  color: $color-header-text;
+}
+
+.menu__list-link--current::after {
+  content: '';
+
+  position: absolute;
+
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $color-accent;
+}
+
+.menu__list-item:not(:last-child) {
+  margin-right: 39px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  margin: 0 auto;
+  padding-bottom: 22px;
+  width: 336px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    width: 280px;
+  }
+}
+.search {
+  width: 336px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  border-bottom: 0.5px solid $color-header-text;
+  font-size: $font-size-normal;
+  float: left;
+  color: $color-header-text;
+  padding: 4px 20px 4px 4px;
+  @media screen and (max-width: 768px) {
+    width: 280px;
+  }
+}
+.search::-webkit-input-placeholder {
+  color: $color-header-text;
+}
+
+.search:-moz-placeholder {
+  color: $color-header-text;
+}
+
+.search::-moz-placeholder {
+  color: $color-header-text;
+}
+
+.search:-ms-input-placeholder {
+  color: $color-header-text;
+}
+
+.form__icon {
+  position: absolute;
+  right: 0%;
+  margin-top: 4px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.form__error-message {
+  font-size: $font-size-normal;
+  display: block;
+  color: red;
+  text-align: center;
+  padding-bottom: 56px;
+}

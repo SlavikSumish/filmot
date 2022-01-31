@@ -1,0 +1,16 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+@import './utils/hidden';
+@import './utils/_variables';
+@import './base/normalize';
+@import './base/reset';
+@import './base/fonts';
+@import './base/container';
+@import './layout/home-header';
+@import './layout/library-header';
+@import './layout/gallery';
+@import './layout/footer';
+@import './layout/team-modal';
+@import './layout/cinema-modal';
