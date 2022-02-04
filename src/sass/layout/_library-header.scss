@@ -1,0 +1,54 @@
+.library-page-header__container {
+  height: 230px;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+    url(/images/library-header-320.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url(/images/library-header-768.jpg);
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url(/images/library-header.jpg);
+    max-width: 1024px;
+  }
+}
+
+.library-btn {
+  background: transparent;
+  width: 130.19px;
+  height: 44px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    width: 136px;
+    height: 44px;
+  }
+}
+
+.library-btn:hover,
+.library-btn:focus {
+  background: #ff6b01;
+  box-shadow: 0px 8px 43px rgba(255, 107, 1, 0.6);
+  border: none;
+}
+
+.library-btn:first-child {
+  margin-right: 19.62px;
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+  }
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}

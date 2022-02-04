@@ -1,0 +1,24 @@
+.page-footer {
+  font-size: $font-size-large;
+  font-weight: $font-weight-light;
+  color: $color-footer-text;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 30px 0;
+}
+.footer-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.footer-link {
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 1s;
+  &:hover {
+    text-decoration: none;
+    color: $color-accent;
+  }
+}

@@ -1,18 +1,21 @@
 .page-header__container {
   height: 230px;
+  width: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-    url(/images/Rectangle320.jpg);
+    url(/images/home-heder320.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-      url(/images/Rectangle768.jpg);
+      url(/images/home-heder768.jpg);
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1024px) {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-      url(/images/Rectangle.jpg);
+      url(/images/home-heder.jpg);
+    max-width: 1024px;
   }
 }
 
