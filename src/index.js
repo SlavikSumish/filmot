@@ -1,8 +1,8 @@
 import './sass/main.scss';
 
 
-import { addToStorage } from '../addToStorage';
-import getFromStorage from '../getFromStorage';
+import { addToStorage } from '../src/JS/addToStorage';
+import  getFromStorage  from '../src/JS/getFromStorage';
 
 
 import './JS/header/header';
